@@ -6,14 +6,14 @@ import random
 import copy
 
 
-def random_contraction_algorithm(adj_list_original, number):
-	""" It retuns minimum cut of an undirected graph.
+def random_contraction_algorithm(adj_list_original, number=100):
+	"""Return the minimum cut of an undirected graph.
 
-		Input: 
-			adj_list_original: A dictionary-formated adjacent list. 
-			The keys represent vertices, and the values represent adjacent
-			vertices for that specific vertex in key.
-			number: nunmber of iterations.
+	Keyword arguments:
+	adj_list_original -- A dictionary-formated adjacent list. The keys 
+	represent vertices, and the values represent adjacent vertices for that 
+	specific vertex in key.
+	 -- number: nunmber of iterations (default 100).
 	"""
 
 	# Get number of vertices in the graph.
